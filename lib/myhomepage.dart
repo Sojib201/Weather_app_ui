@@ -26,14 +26,14 @@ class _MyHomePageState extends State<MyHomePage> {
             decoration: BoxDecoration(),
             width: size.width,
             height: size.height,
-            child: Image(
+            child: const Image(
               image: AssetImage(
                 "images/back.png",
               ),
               fit: BoxFit.fill,
             ),
           ),
-          Positioned(
+          const Positioned(
             top: 30,
             left: 90,
             right: 90,
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           ),
-          Positioned(
+          const Positioned(
             top: 245,
             child: Image(
               image: AssetImage("images/house.png"),
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                 decoration: BoxDecoration(
                   color: Colors.deepPurple.withOpacity(0.2),
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(40),
                       topRight: Radius.circular(40),
                   ),
@@ -88,16 +88,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: size.height / 2.4,
                 width: size.width,
                 child: ClipRRect(
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(40),
                       topRight: Radius.circular(40),
                     ),
                     child: BackdropFilter(
                       filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
-                      child: Column(
+                      child: const Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(
+                            padding: EdgeInsets.only(
                                 top: 25, left: 16, right: 16),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -180,7 +180,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           border:
                               Border(bottom: BorderSide(color: Colors.grey)),
                           borderRadius: BorderRadius.only(
@@ -189,7 +189,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                               bottomLeft: Radius.circular(35))),
                       height: 80,
-                      child: Center(
+                      child: const Center(
                         child: Icon(
                           Icons.fmd_good_outlined,
                           color: Colors.white,
@@ -199,7 +199,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           border: Border(top: BorderSide(color: Colors.grey)),
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(55),
@@ -209,7 +209,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         border: Border(bottom: BorderSide(color: Colors.grey)),
                         borderRadius: BorderRadius.only(
                             bottomRight: Radius.circular(
@@ -218,7 +218,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             bottomLeft: Radius.circular(35)),
                       ),
                       height: 80,
-                      child: Center(
+                      child: const Center(
                         child: Icon(
                           Icons.menu,
                           color: Colors.white,
@@ -266,7 +266,7 @@ class WeatherItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 6),
+      margin: const EdgeInsets.symmetric(horizontal: 6),
       height: MediaQuery.of(context).size.height / 5,
       width: MediaQuery.of(context).size.width / 5.5,
       decoration: BoxDecoration(
